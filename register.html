@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>USER SIGNUP</h1>
+    <form action="/register" method="post">
+      <label>ID</label>
+      <input type="text" id="user_id" name="user_id" required /><br /><br />
+
+      <label>Password:</label>
+      <input type="password" id="pass" name="pass" required /><br /><br />
+
+      <label>First Name:</label>
+      <input type="text" id="fname" name="fname" required /><br /><br />
+
+      <label>Last Name:</label>
+      <input type="text" id="lname" name="lname" required /><br /><br />
+
+      <label>Age:</label>
+      <input type="number" id="age" name="age" required /><br /><br />
+
+      <label>Phone Number:</label>
+      <input type="number" id="contact" name="contact" required /><br /><br />
+
+      <label>Gender:</label>
+      <select name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option></select
+      ><br /><br />
+
+      <label>Dosage Taken:</label>
+      <input
+        type="number"
+        id="dosageTaken"
+        name="dosageTaken"
+        required
+      /><br /><br />
+
+      <label>City:</label>
+      <select name="city">
+        <option value="City A">City A</option>
+        <option value="City B">City B</option>
+        <option value="City C">City C</option></select
+      ><br /><br />
+
+      <label>State:</label>
+      <select name="state">
+        <option value="State A">State A</option>
+        <option value="State B">State B</option>
+        <option value="State C">State C</option></select
+      ><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <a href="/"></a>
+  </body>
+</html>

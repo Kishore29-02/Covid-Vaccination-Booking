@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Center Information</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="centerTable">
+      <thead>
+        <tr>
+          <th>Center ID</th>
+          <th>Open Time</th>
+          <th>Closing Time</th>
+          <th>Available Slots</th>
+          <th>Contact Number</th>
+          <th>City</th>
+          <th>State</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script>
+      // JSON data
+      const centerData = [
+        {
+          center_id: "C1",
+          open_time: "08:00:00",
+          closing_time: "18:00:00",
+          available_slots: 8,
+          contact_no: "1234567890",
+          city: "City A",
+          state: "State A",
+        },
+        // ... Add more JSON objects as needed
+      ];
+
+      // Get the table body
+      const tableBody = document.querySelector("#centerTable tbody");
+
+      // Generate table rows dynamically
+      centerData.forEach((center) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+        <td>${center.center_id}</td>
+        <td>${center.open_time}</td>
+        <td>${center.closing_time}</td>
+        <td>${center.available_slots}</td>
+        <td>${center.contact_no}</td>
+        <td>${center.city}</td>
+        <td>${center.state}</td>
+      `;
+        tableBody.appendChild(row);
+      });
+    </script>
+  </body>
+</html>

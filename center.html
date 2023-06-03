@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Center</title>
+  </head>
+  <body>
+    <h1>Add Center</h1>
+    <form action="/center" method="post">
+      <label>Center ID:</label>
+      <input type="text" id="name" name="id" required /><br /><br />
+
+      <label>Open time:</label>
+      <input type="time" id="open" name="openTime" required /><br /><br />
+
+      <label>Close Time:</label>
+      <input type="time" id="close" name="closingTime" required /><br /><br />
+
+      <label>Available Slots:</label>
+      <input type="number" id="slots" name="available" required /><br /><br />
+
+      <label>Phone Number:</label>
+      <input type="number" id="age" name="contact" required /><br /><br />
+
+      <label>City:</label>
+      <select name="city">
+        <option value="City A">City A</option>
+        <option value="City B">City B</option>
+        <option value="City C">City C</option></select
+      ><br /><br />
+
+      <label>State:</label>
+      <select name="state">
+        <option value="State A">State A</option>
+        <option value="State B">State B</option>
+        <option value="State C">State C</option></select
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
